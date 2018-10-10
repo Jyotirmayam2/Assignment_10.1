@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <script>
+        //js class
+        class Rectangle {
+            //constructor setting
+            constructor(length, breadth) {
+                this.length = length;
+                this.breadth = breadth;
+            }
+            
+            //function defination
+            calculateArea() {
+                return this.length * this.breadth;
+            }
+        }
+
+        var area1 = new Rectangle("10","5");
+        console.log(area1);
+        //function call and logging the result
+        console.log("Area of the rectangle is : " + area1.calculateArea() + " sqcm");
+    </script>
+</body>
+
+</html>
